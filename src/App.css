@@ -1,4 +1,10 @@
 /* App.css */
+body.dark-mode {
+  background-color: #222;
+  color: #eee;
+}
+
+/* Ensure other styles like nav work with dark mode */
 nav {
   background-color: #282c34;
   padding: 1rem;
@@ -19,4 +25,3 @@ nav ul li a {
 nav ul li a:hover {
   text-decoration: underline;
 }
-

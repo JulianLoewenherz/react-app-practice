@@ -5,6 +5,7 @@ import OurTeam from './components/OurTeam'; // Import the Our Team component
 import OurMission from './components/OurMission'; // Import the Our Mission component
 import ReachOut from './components/ReachOut'; // Import the Reach Out component
 import './App.css';
+import Footer from './components/Footer'; 
 function App() {
   return (
     <Router>
