@@ -4,6 +4,7 @@ import Home from './components/Home';       // Import the Home component
 import OurTeam from './components/OurTeam'; // Import the Our Team component
 import OurMission from './components/OurMission'; // Import the Our Mission component
 import ReachOut from './components/ReachOut'; // Import the Reach Out component
+import './App.css';
 function App() {
   return (
     <Router>
