@@ -1,11 +1,11 @@
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Home from './components/Home';       // Import the Home component
-import OurTeam from './components/OurTeam'; // Import the Our Team component
-import OurMission from './components/OurMission'; // Import the Our Mission component
-import ReachOut from './components/ReachOut'; // Import the Reach Out component
-import './App.css';
-import Footer from './components/Footer'; 
+import Home from './components/Home';
+import OurTeam from './components/OurTeam';
+import OurMission from './components/OurMission';
+import ReachOut from './components/ReachOut';
+import Footer from './components/Footer'; // Import the Footer component
+
 function App() {
   return (
     <Router>
@@ -20,11 +20,13 @@ function App() {
         </nav>
         
         <Routes>
-          <Route path="/" element={<Home />} /> {/* Renders Home component at the root path */}
-          <Route path="/our-team" element={<OurTeam />} /> {/* Renders Our Team component at /our-team */}
-          <Route path="/our-mission" element={<OurMission />} /> {/* Renders Our Mission component at /our-mission */}
-          <Route path="/reach-out" element={<ReachOut />} /> {/* Renders Reach Out component at /reach-out */}
+          <Route path="/" element={<Home />} />
+          <Route path="/our-team" element={<OurTeam />} />
+          <Route path="/our-mission" element={<OurMission />} />
+          <Route path="/reach-out" element={<ReachOut />} />
         </Routes>
+
+        <Footer /> {/* Add the Footer component here */}
       </div>
     </Router>
   );

@@ -1,13 +1,13 @@
-/* App.css */
 body.dark-mode {
   background-color: #222;
   color: #eee;
 }
 
-/* Ensure other styles like nav work with dark mode */
+/* Light Mode */
 nav {
-  background-color: #282c34;
+  background-color: #ffffff;
   padding: 1rem;
+  border-bottom: 1px solid #ccc;
 }
 
 nav ul {
@@ -18,10 +18,53 @@ nav ul {
 }
 
 nav ul li a {
-  color: white;
+  color: #333; /* Dark text for light mode */
   text-decoration: none;
 }
 
 nav ul li a:hover {
   text-decoration: underline;
+}
+
+/* Dark Mode */
+body.dark-mode nav {
+  background-color: #333; /* Dark background for dark mode */
+  border-bottom: 1px solid #444;
+}
+
+body.dark-mode nav ul li a {
+  color: #eee; /* Light text for dark mode */
+}
+
+.testimonial-form {
+  padding: 1rem;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  margin-bottom: 2rem;
+}
+
+.testimonial-form input,
+.testimonial-form textarea {
+  margin: 0.5rem 0;
+  padding: 0.5rem;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.testimonial-form button {
+  padding: 0.5rem 1rem;
+  background-color: #282c34;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.testimonial-form button:hover {
+  background-color: #3c4045;
+}
+
+.testimonial-list li {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border-bottom: 1px solid #ccc;
 }
