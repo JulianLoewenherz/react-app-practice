@@ -1,5 +1,5 @@
 import React from 'react';
-import Testimonials from './components/Testimonials';
+import Testimonials from './Testimonials';
 
 function Home() {
   return (
